@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stylish Bungalow | Luxury Vacation Rental | Little Rock</title>
+
+<meta name="description" content="Luxury vacation rental in Little Rock featuring a private hot tub, fire pit, chef kitchen, fast WiFi, and convenient access to downtown and local hospitals.">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+--primary:#8AA17D;
+--gold:#B89B5E;
+--dark:#232323;
+--light:#FAF7F2;
+--white:#ffffff;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:var(--light);
+color:var(--dark);
+line-height:1.6;
+}
+
+h1,h2,h3{
+font-family:'Playfair Display',serif;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+.navbar{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(255,255,255,.95);
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+z-index:999;
+box-shadow:0 0 10px rgba(0,0,0,.08);
+}
+
+.logo{
+font-size:1.5rem;
+font-weight:700;
+}
+
+.nav-links{
+display:flex;
+gap:30px;
+}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1800&q=80');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero-content{
+max-width:900px;
+}
+
+.hero h1{
+font-size:4rem;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:1.25rem;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:16px 34px;
+background:var(--gold);
+color:white;
+font-weight:600;
+border-radius:50px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-2px);
+}
+
+.section{
+padding:90px 8%;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:50px;
+font-size:2.5rem;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.feature-card{
+background:white;
+padding:30px;
+border-radius:16px;
+box-shadow:0 6px 20px rgba(0,0,0,.08);
+text-align:center;
+}
+
+.feature-card h3{
+margin-bottom:10px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:15px;
+}
+
+.gallery img{
+width:100%;
+height:280px;
+object-fit:cover;
+border-radius:14px;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:16px;
+}
+
+.highlights{
+background:white;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:30px;
+text-align:center;
+}
+
+.stat{
+padding:30px;
+}
+
+.stat h2{
+font-size:2.8rem;
+color:var(--primary);
+}
+
+.review-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:25px;
+}
+
+.review{
+background:white;
+padding:30px;
+border-radius:16px;
+box-shadow:0 4px 14px rgba(0,0,0,.08);
+}
+
+.booking-section{
+background:var(--primary);
+color:white;
+}
+
+.booking-form{
+max-width:650px;
+margin:auto;
+display:grid;
+gap:15px;
+}
+
+.booking-form input,
+.booking-form textarea{
+padding:15px;
+border:none;
+border-radius:10px;
+font-family:inherit;
+}
+
+.booking-form button{
+background:var(--gold);
+color:white;
+padding:15px;
+border:none;
+border-radius:10px;
+font-weight:600;
+cursor:pointer;
+}
+
+.footer{
+background:#1b1b1b;
+color:white;
+padding:50px 8%;
+text-align:center;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.7rem;
+}
+
+.about{
+grid-template-columns:1fr;
+}
+
+.nav-links{
+display:none;
+}
+
+.stats{
+grid-template-columns:repeat(2,1fr);
+}
+}
+
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+<div class="logo">Stylish Bungalow</div>
+
+<div class="nav-links">
+<a href="#about">About</a>
+<a href="#gallery">Gallery</a>
+<a href="#amenities">Amenities</a>
+<a href="#reviews">Reviews</a>
+<a href="#book">Book</a>
+</div>
+</nav>
+
+<section class="hero">
+<div class="hero-content">
+<h1>Luxury Stay in Little Rock</h1>
+
+<p>
+Private Hot Tub • Fire Pit • Sleeps 6 • Minutes from Downtown
+</p>
+
+<a href="#book" class="btn">
+Check Availability
+</a>
+</div>
+</section>
+
+<section class="section" id="about">
+
+<div class="about">
+
+<div>
+<h2 class="section-title">Welcome Home</h2>
+
+<p>
+Experience an elevated stay in one of Little Rock's most charming neighborhoods.
+Whether you're visiting family, working remotely, traveling for medical care, or
+enjoying a weekend getaway, our beautifully designed bungalow offers the perfect
+combination of comfort, convenience, and luxury.
+</p>
+
+<br>
+
+<p>
+The property features three spacious bedrooms, two and a half bathrooms,
+a private hot tub, outdoor fire pit, chef-inspired kitchen, fast WiFi,
+and effortless self check-in.
+</p>
+
+</div>
+
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80">
+
+</div>
+
+</section>
+
+<section class="section highlights">
+
+<h2 class="section-title">Property Highlights</h2>
+
+<div class="stats">
+<div class="stat">
+<h2>3</h2>
+<p>Bedrooms</p>
+</div>
+
+<div class="stat">
+<h2>2.5</h2>
+<p>Bathrooms</p>
+</div>
+
+<div class="stat">
+<h2>6</h2>
+<p>Guests</p>
+</div>
+
+<div class="stat">
+<h2>504</h2>
+<p>Mbps WiFi</p>
+</div>
+</div>
+
+</section>
+
+<section class="section" id="amenities">
+
+<h2 class="section-title">Amenities</h2>
+
+<div class="features">
+
+<div class="feature-card">
+<h3>Private Hot Tub</h3>
+<p>Relax after a day exploring Little Rock.</p>
+</div>
+
+<div class="feature-card">
+<h3>Fire Pit</h3>
+<p>Enjoy evenings outdoors with friends and family.</p>
+</div>
+
+<div class="feature-card">
+<h3>Chef Kitchen</h3>
+<p>Modern appliances and spacious cooking area.</p>
+</div>
+
+<div class="feature-card">
+<h3>Fast WiFi</h3>
+<p>Perfect for remote work and streaming.</p>
+</div>
+
+<div class="feature-card">
+<h3>Self Check-In</h3>
+<p>Keypad entry allows flexible arrival times.</p>
+</div>
+
+<div class="feature-card">
+<h3>Workspace</h3>
+<p>Dedicated area for productivity.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="gallery">
+
+<h2 class="section-title">Gallery</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1560185008-b033106af5c3?auto=format&fit=crop&w=1200&q=80">
+
+<img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80">
+
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80">
+
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80">
+
+<img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80">
+
+<img src="https://images.unsplash.com/photo-1505692794403-34d4982d1d37?auto=format&fit=crop&w=1200&q=80">
+
+</div>
+
+</section>
+
+<section class="section" id="reviews">
+
+<h2 class="section-title">Guest Experiences</h2>
+
+<div class="review-grid">
+
+<div class="review">
+★★★★★
+<p>
+Beautiful home, comfortable beds, and the hot tub made our stay unforgettable.
+</p>
+</div>
+
+<div class="review">
+★★★★★
+<p>
+Excellent location near downtown and hospitals. The host was responsive and helpful.
+</p>
+</div>
+
+<div class="review">
+★★★★★
+<p>
+Perfect for our family visit. Clean, modern and very relaxing.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section booking-section" id="book">
+
+<h2 class="section-title">Book Your Stay</h2>
+
+<form class="booking-form">
+
+<input type="text" placeholder="Full Name">
+
+<input type="email" placeholder="Email Address">
+
+<input type="date">
+
+<input type="date">
+
+<textarea rows="5" placeholder="Tell us about your stay"></textarea>
+
+<button type="submit">
+Request Availability
+</button>
+
+</form>
+
+</section>
+
+<footer class="footer">
+
+<h3>Stylish Bungalow</h3>
+
+<p>
+Little Rock, Arkansas
+</p>
+
+<br>
+
+<p>
+© 2026 All Rights Reserved
+</p>
+
+</footer>
+
+</body>
+</html>
